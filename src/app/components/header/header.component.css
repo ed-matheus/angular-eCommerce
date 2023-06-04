@@ -1,9 +1,12 @@
 /* Container raiz */
 .header__container {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 1220px;
+  margin: auto;
 }
 
 /* Container da Logo */
@@ -28,7 +31,6 @@
 }
 
 /* Barra de Pesquisa, Conta e Carrinho */
-/* Conta e Carrinho */
 .search_account_cart__container {
   display: flex;
   align-items: center;
@@ -66,6 +68,7 @@
   font-size: 16px;
 }
 
+/* Conta e Carrinho */
 .account_and_cart {
-  width: 230px;
+  width: 165px;
 }
