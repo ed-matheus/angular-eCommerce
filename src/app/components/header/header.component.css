@@ -1,0 +1,65 @@
+/* Container raiz */
+.header__container {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container da Logo */
+.logo__container {
+  margin-right: 60px;
+}
+
+/* Container do Menu */
+.menu__container {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.menu__container > ul {
+  display: flex;
+  text-align: center;
+}
+
+.menu__container > ul > li {
+  margin-right: 35px;
+}
+
+/* Barra de Pesquisa, Conta e Carrinho */
+/* Conta e Carrinho */
+.search_account_cart__container {
+  display: flex;
+  align-items: center;
+}
+
+.search_bar > input {
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 290px;
+  padding-left: 20px;
+  margin-right: 35px;
+  background-color: #ebebeb;
+}
+
+.search_bar > button {
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  padding-right: 20px;
+  background-color: #ebebeb;
+}
+
+.search_bar > button > i {
+  color: gray;
+}
+
+.search_bar > button > i:hover {
+  font-size: 16px;
+}
+
+.account_and_cart {
+  width: 230px;
+}
