@@ -1,8 +1,60 @@
+/* CONTAINER DO BANNER */
 .banner__container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   background-color: antiquewhite;
-  width: 1220px;
+  width: 1040px;
+  height: 274px;
   margin: auto;
+  border-radius: 5px;
+  /* border: 1px solid red; */
+}
+
+/* BOX DO TEXTO */
+.banner__text {
+  /* border: 1px solid blue; */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  margin-right: 100px;
+  padding: 15px;
+}
+
+.banner__text > span {
+  line-height: 40px;
+  color: #06358B;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* BOTÃO */
+.banner__text > button {
+  background: none;
+  border: 2px solid #06358B;
+  border-radius: 20px;
+  width: 25%;
+  margin-top: 25px;
+}
+
+.banner__text > button {
+  background: none;
+  border: 2px solid #06358B;
+  border-radius: 20px;
+  color: #06358B;
+  font-weight: 500;
+  width: 30%;
+  margin-top: 25px;
+}
+
+.banner__text > button:hover {
+  background: #06358B;
+  color: white;
+}
+
+/* FORMATANDO A IMAGEM */
+.banner__container > img {
+  width: 200px;
 }
