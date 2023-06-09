@@ -1,13 +1,46 @@
 
-<section>
-  <app-banner></app-banner>
-</section>
+<div class="container__content">
+  <section>
+    <app-banner></app-banner>
+  </section>
 
-<!-- Container guardando todos os produtos -->
-<div class="container__products">
-  <app-product-card style="margin-right: 25px;" name=""></app-product-card>
-  <app-product-card style="margin-right: 25px;"></app-product-card>
-  <app-product-card style="margin-right: 25px;"></app-product-card>
-  <app-product-card></app-product-card>
+  <h4>Products for you!</h4>
+  <!-- Container guardando todos os produtos -->
+  <div class="container__products">
+    <app-product-card
+      style="margin-right: 26px;"
+      image="../../../assets/img/headphone.png"
+      name="Wireless Headphone, XYZ"
+      description="A perfect high-fidelity audio for daily songs"
+      price="$89.00"
+    >
+    </app-product-card>
+
+    <app-product-card
+      style="margin-right: 26px;"
+      image="../../../assets/img/powerbank.png"
+      name="Powerbank, ABC"
+      description="Charge your phone anywhere"
+      price="$42.00"
+    >
+    </app-product-card>
+
+    <app-product-card
+      style="margin-right: 26px;"
+      image="../../../assets/img/keyboard.png"
+      name="Wireless Keyboard, XXX"
+      description="Typing was never such a good thing as now"
+      price="$40.00"
+    >
+    </app-product-card>
+
+    <app-product-card
+      image="../../../assets/img/mousepad.png"
+      name="Soft Mousepad, XYZ"
+      description="A perfect mousepad for your daily clicks"
+      price="$24.00"
+    >
+    </app-product-card>
+  </div>
 </div>
 

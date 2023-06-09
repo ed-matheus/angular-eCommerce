@@ -1,8 +1,8 @@
 /* CONTAINER GERAL DO PRODUTO */
 .product-card__container {
   /* border: 1px solid red; */
-  width: 250px;
-  margin: auto;
+  width: 100%;
+  height: 100%;
 
   display: flex;
   flex-direction: column;
@@ -11,14 +11,21 @@
 
 /* IMAGEM DO PRODUTO */
 .product__image {
-  background-color: #e2e2e2;
+  background-color: #c4c4c4;
   border-radius: 10px;
-  width: 100%;
+  width: 250px;
+  height: 250px;
   margin-bottom: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .product__image > img {
-  width: 100%;
+  width: 250px;
+  min-width: 180px;
+  min-height: 50px;
 }
 
 /* DESCRIÇÃO DO PRODUTO */
