@@ -1,3 +1,12 @@
 section {
   margin-bottom: 28px;
 }
+
+/* CONTAINER DOS PRODUTOS */
+.container__products {
+  /* border: 1px solid blue; */
+  display: flex;
+
+  width: 1078px;
+  margin: auto;
+}

@@ -5,8 +5,9 @@
   align-items: center;
   justify-content: center;
 
-  width: 1220px;
+  width: 1300px;
   margin: auto;
+  padding: 15px;
 }
 
 /* Container da Logo */
