@@ -1,11 +1,11 @@
 /* Container raiz */
 .header__container {
-  /* border: 1px solid red; */
+  /* border: 1px solid blue; */
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 1300px;
+  width: 1400px;
   margin: auto;
   padding: 15px 15px 0px 15px;
 }
@@ -13,6 +13,7 @@
 /* Container da Logo */
 .logo__container {
   margin-right: 60px;
+  width: 325px;
 }
 
 /* Container do Menu */
@@ -29,6 +30,11 @@
 
 .menu__container > ul > li {
   margin-right: 35px;
+}
+
+/* Dropdown Style */
+.dropdown-menu {
+  border: none;
 }
 
 /* Barra de Pesquisa, Conta e Carrinho */
@@ -66,7 +72,7 @@
 }
 
 .search_button > i:hover {
-  font-size: 16px;
+  color: #565656;
 }
 
 /* Conta e Carrinho */

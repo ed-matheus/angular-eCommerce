@@ -6,26 +6,64 @@
     </h1>
   </div>
 
-  <div class="menu__container">
-    <ul>
-      <li>
-        <a href="#">
-          Categories <i class="fas fa-regular fa-caret-down"></i>
+  <div class="collapse navbar-collapse menu__container">
+
+    <ul class="mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
         </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Electronics</a>
+          <div class="dropdown-divider mx-2"></div>
+          <a class="dropdown-item" href="#">Outfit</a>
+          <div class="dropdown-divider mx-2"></div>
+          <a class="dropdown-item" href="#">Nerd products</a>
+        </div>
       </li>
-      <li>
-        <a href="#">Deals</a>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">What´s new</a>
       </li>
-      <li>
-        <a href="#">What's new</a>
-      </li>
-      <li>
-        <a href="#">Delivery</a>
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Contact</a>
       </li>
     </ul>
+
+    <div class="search_account_cart__container">
+      <form class="form-inline my-2 my-lg-0 search_bar">
+        <input type="text" placeholder="Search Product">
+        <button class="search_button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+    </div>
+
+    <div class="account_and_cart">
+      <ul>
+        <li>
+          <a href="#" style="margin-right: 35px;">
+            <i class="fa-regular fa-user"></i>
+            Account
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+          </a>
+        </li>
+      </ul>
+    </div>
+
   </div>
 
-  <div class="search_account_cart__container">
+  <!-- <div class="search_account_cart__container">
     <div class="search_bar">
       <input type="text" placeholder="Search Product">
       <button class="search_button">
@@ -49,5 +87,5 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div> -->
 </div>
