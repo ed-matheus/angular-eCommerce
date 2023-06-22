@@ -1,0 +1,12 @@
+.product__container {
+  width: 1080px;
+  margin: auto;
+  display: flex;
+}
+
+.product_images {
+  width: 500px;
+  background-color: #dfdfdf;
+  border-radius: 8px;
+  margin-right: 62px;
+}

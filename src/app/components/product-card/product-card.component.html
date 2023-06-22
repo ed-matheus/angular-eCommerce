@@ -1,12 +1,12 @@
 <div class="product-card__container">
 
   <div class="product__image">
-    <img src="{{ image }}" alt="imagem do produto">
+    <img src="{{ image }}" alt="imagem do produto" routerLink="product">
   </div>
 
   <div class="product__description">
     <div class="product__name_price">
-      <span>{{ name }}</span>
+      <span routerLink="product">{{ name }}</span>
       <span class="price">{{ price }}</span>
     </div>
 
