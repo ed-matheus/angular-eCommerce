@@ -22,10 +22,11 @@
   justify-content: center;
 }
 
-.product__image > img {
+.product__image > img, .product__image:hover {
   width: 250px;
   min-width: 180px;
   min-height: 50px;
+  cursor: pointer;
 }
 
 /* DESCRIÇÃO DO PRODUTO */
@@ -53,6 +54,10 @@
 
 .product__name_price > .price {
   color: #424242;
+}
+
+.product__name_price > .name:hover {
+  cursor: pointer;
 }
 
 /* ESTRELAS DE AVALIAÇÃO DO PRODUTO */

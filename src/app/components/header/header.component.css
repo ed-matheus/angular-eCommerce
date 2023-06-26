@@ -13,11 +13,12 @@
 }
 
 /* Container da Logo */
-.logo__container {
+.logo__container, .logo__container:hover {
   margin-right: 60px;
   width: 238px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo__container > i {
