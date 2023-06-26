@@ -7,7 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProductComponent } from './pages/product/product.component';
+import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProductComponent } from './pages/product/product.component';
     BannerComponent,
     ProductCardComponent,
     HomeComponent,
+    ProductPageComponent,
     ProductComponent,
   ],
   imports: [
