@@ -48,12 +48,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 16px;
   font-weight: 500;
 }
 
 .product__name_price > .price {
   color: #424242;
+}
+
+.product__name_price > .name {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .product__name_price > .name:hover {

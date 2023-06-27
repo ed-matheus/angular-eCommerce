@@ -22,9 +22,16 @@ export class ProductCardComponent implements OnInit {
   @Input()
   starsNumber:string = '';
 
+  @Input()
+  id:string = '0';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  teste() {
+    console.log()
   }
 
 }

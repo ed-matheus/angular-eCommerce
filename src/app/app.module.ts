@@ -9,6 +9,11 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { HomeComponent } from './pages/home/home.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { ProductComponent } from './components/product/product.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'product/:id', component: ProductDetailsComponent}
+];
 
 @NgModule({
   declarations: [
@@ -23,6 +28,7 @@ import { ProductComponent } from './components/product/product.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
