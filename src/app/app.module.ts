@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { ProductComponent } from './components/product/product.component';
 
 @NgModule({
@@ -17,7 +17,7 @@ import { ProductComponent } from './components/product/product.component';
     BannerComponent,
     ProductCardComponent,
     HomeComponent,
-    ProductPageComponent,
+    ProductDetailsComponent,
     ProductComponent,
   ],
   imports: [
