@@ -1,0 +1,23 @@
+{
+  "products":[
+    {
+      "id":1,
+      "product": "headphone",
+      "name": "Wireless Headphone, XYZ",
+      "price": "$50.00",
+      "description": "a perfect high-fidelity audio for each daily songs that you like",
+      "images":[
+        {"id":1, "name":"black"},
+        {"id":2, "name":"blue"},
+        {"id":3, "name":"brown"}
+      ]
+    },
+    {
+      "id":2,
+      "product": "powerbank",
+      "name": "Wireless Headphone, XYZ",
+      "price": "$50.00",
+      "description": "a perfect high-fidelity audio for each daily songs that you like"
+    }
+  ]
+}

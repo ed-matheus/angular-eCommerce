@@ -19,6 +19,9 @@ export class ProductCardComponent implements OnInit {
   @Input()
   description:string = '';
 
+  @Input()
+  starsNumber:string = '';
+
   constructor() { }
 
   ngOnInit(): void {

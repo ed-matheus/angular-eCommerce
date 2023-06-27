@@ -1,7 +1,7 @@
 <div class="product__container">
 
   <div class="product_images">
-    <img src="../../../assets/img/headphone.png" alt="" class="py-2">
+    <img src="{{ productImage }}" alt="" class="py-2">
 
     <div class="other_images">
       <img src="../../../assets/img/headphone.png" alt="" width="100px" height="100px">
@@ -12,8 +12,8 @@
 
   <div class="product_description">
     <!-- Título e Descrição -->
-    <h3>Wireless Headphone, XYZ</h3>
-    <p>a perfect high-fidelity audio for each daily songs that you like</p>
+    <h3>{{ productName }}</h3>
+    <p>{{ productDescription }}</p>
 
     <!-- Avaliação -->
     <div class="rating-stars">
@@ -22,12 +22,12 @@
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
       <i class="fa-solid fa-star"></i>
-      <span>(138)</span>
+      <span>({{ productStarsNumber }})</span>
     </div>
 
     <!-- Preço -->
     <div class="product__price">
-      <h3>$89.00</h3>
+      <h3>{{ productPrice }}</h3>
     </div>
 
     <!-- Estilos -->
@@ -42,9 +42,9 @@
 
     <!-- Quantidade -->
     <div class="product__amount">
-      <button class="btn-less"><i class="fa-solid fa-minus"></i></button>
-      <span class="counter">0</span>
-      <button class="btn-more"><span><i class="fa-solid fa-plus"></i></span></button>
+      <button class="btn-less" (click)="qtdCalcLess()"><i class="fa-solid fa-minus"></i></button>
+      <span class="counter">{{ count }}</span>
+      <button class="btn-more" (click)="qtdCalcMore()"><span><i class="fa-solid fa-plus"></i></span></button>
     </div>
 
     <!-- Botões de compra e adicionar ao carrinho -->
