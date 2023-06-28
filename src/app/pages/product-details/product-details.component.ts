@@ -13,8 +13,10 @@ export class ProductDetailsComponent implements OnInit {
   productImages:string | any = "";
   productName:string | any = "";
   productDesc:string = "";
-  productStars:string = "";
-  productPrice:string = "";
+  productStars:string | any = "";
+  productPrice:string | any = "0";
+
+  style:boolean | any = false;
 
   private id:string | null = '0'
 
@@ -38,6 +40,9 @@ export class ProductDetailsComponent implements OnInit {
     this.productDesc = result.description
     this.productImages = result.images
     this.mainPicture = result.mainPicture
+    this.productPrice = result.price
+    this.productStars = result.stars
+    this.style = result.style
   }
 
   // Métodos para a quantidade de produtos a serem comprados

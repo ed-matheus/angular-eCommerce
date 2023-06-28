@@ -1,25 +1,15 @@
-<!-- <div class="product__container">
-  <app-product
-    mainPicture="{{ mainPicture }}"
-    productImage="{{ productImages }}"
-    productName="{{ productName }}"
-    productDescription="{{ productDesc }}"
-    productPrice="$89.00"
-    productStarsNumber="238"
-  >
-  </app-product>
-
-</div> -->
-
 <div class="product__container">
 
   <div class="product_images">
-    <img src="{{ mainPicture }}" alt="" class="py-2">
+    <img class="main_picture" src="{{ mainPicture }}" alt="" class="py-2">
 
-    <div class="other_images" *ngFor="let image of productImages">
-      <img [src]="image.img1" alt="Product Images" width="100px" height="100px">
+    <div class="other_images" *ngFor="let imageGroup of productImages">
+      <div class="other_images" *ngFor="let image of imageGroup | keyvalue">
+        <img [src]="image.value" alt="Product Image" width="100px" height="100px">
+      </div>
+      <!-- <img [src]="image.img1" alt="Product Images" width="100px" height="100px">
       <img [src]="image.img2" alt="Product Images" width="100px" height="100px">
-      <img [src]="image.img3" alt="Product Images" width="100px" height="100px">
+      <img [src]="image.img3" alt="Product Images" width="100px" height="100px"> -->
     </div>
   </div>
 
@@ -44,7 +34,7 @@
     </div>
 
     <!-- Estilos -->
-    <div class="product__customizing">
+    <div *ngIf="style" class="product__customizing">
       <p>Choose a style</p>
       <div class="product__styles">
         <div class="black_style" style="margin-right: 8px;"></div>

@@ -30,8 +30,4 @@ export class ProductCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  teste() {
-    console.log()
-  }
-
 }
