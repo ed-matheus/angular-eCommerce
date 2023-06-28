@@ -8,7 +8,6 @@ import { BannerComponent } from './components/banner/banner.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
-import { ProductComponent } from './components/product/product.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
@@ -23,7 +22,6 @@ const routes: Routes = [
     ProductCardComponent,
     HomeComponent,
     ProductDetailsComponent,
-    ProductComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,87 @@
-<div class="product__container">
+<!-- <div class="product__container">
   <app-product
-    productImage="../../../assets/img/headphone.png"
-    productName="Wireless Headphone, XYZ"
-    productDescription="a perfect high-fidelity audio for each daily songs that you like"
+    mainPicture="{{ mainPicture }}"
+    productImage="{{ productImages }}"
+    productName="{{ productName }}"
+    productDescription="{{ productDesc }}"
     productPrice="$89.00"
     productStarsNumber="238"
   >
   </app-product>
+
+</div> -->
+
+<div class="product__container">
+
+  <div class="product_images">
+    <img src="{{ mainPicture }}" alt="" class="py-2">
+
+    <div class="other_images" *ngFor="let image of productImages">
+      <img [src]="image.img1" alt="Product Images" width="100px" height="100px">
+      <img [src]="image.img2" alt="Product Images" width="100px" height="100px">
+      <img [src]="image.img3" alt="Product Images" width="100px" height="100px">
+    </div>
+  </div>
+
+  <div class="product_description">
+    <!-- Título e Descrição -->
+    <h3>{{ productName }}</h3>
+    <p>{{ productDesc }}</p>
+
+    <!-- Avaliação -->
+    <div class="rating-stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <span>({{ productStars }})</span>
+    </div>
+
+    <!-- Preço -->
+    <div class="product__price">
+      <h3>{{ productPrice }}</h3>
+    </div>
+
+    <!-- Estilos -->
+    <div class="product__customizing">
+      <p>Choose a style</p>
+      <div class="product__styles">
+        <div class="black_style" style="margin-right: 8px;"></div>
+        <div class="blue_style" style="margin-right: 8px;"></div>
+        <div class="brown_style"></div>
+      </div>
+    </div>
+
+    <!-- Quantidade -->
+    <div class="product__amount">
+      <button class="btn-less" (click)="qtdCalcLess()"><i class="fa-solid fa-minus"></i></button>
+      <span class="counter">{{ count }}</span>
+      <button class="btn-more" (click)="qtdCalcMore()"><span><i class="fa-solid fa-plus"></i></span></button>
+    </div>
+
+    <!-- Botões de compra e adicionar ao carrinho -->
+    <div class="buttons">
+      <button class="btn buy-button">Buy Now</button>
+      <button class="btn cart-button">Add to Cart</button>
+    </div>
+
+    <!-- Informações de Delivery -->
+    <div class="other_info">
+      <div class="free-delivery">
+        <i class="fa-solid fa-truck" style="margin-right: 5px; color: #3c8aca;"></i>
+        <span>Free Delivery</span>
+        <p>Enter your address to calculate shipping</p>
+      </div>
+
+      <div class="return-delivery">
+        <i class="fas fa-regular fa-box" style="margin-right: 5px; color: #3c8aca; font-size: 18px;"></i>
+        <span>Return Delivery</span>
+        <p>Free 30days Delivery Returns. <span><a href="#">Details</a></span></p>
+      </div>
+    </div>
+  </div>
+
 </div>
+
+
