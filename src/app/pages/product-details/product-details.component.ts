@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { products } from '../../data/products';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-product-details',
@@ -56,6 +57,11 @@ export class ProductDetailsComponent implements OnInit {
 
   qtdCalcMore() {
     this.count += 1;
+  }
+
+  // Método para visualização dos estilos do produto
+  styleChange() {
+    $()
   }
 
 }
