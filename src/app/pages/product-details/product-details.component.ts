@@ -11,7 +11,7 @@ import * as $ from 'jquery';
 export class ProductDetailsComponent implements OnInit {
 
   mainPicture:string | any = "";
-  productImages:string | any = "";
+  productImages:string[] | any = [];
   productName:string | any = "";
   productDesc:string = "";
   productStars:string | any = "";
@@ -60,8 +60,8 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   // Método para visualização dos estilos do produto
-  styleChange() {
-    $()
+  styleChange(image: any) {
+    this.mainPicture = image
   }
 
 }

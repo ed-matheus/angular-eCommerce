@@ -29,12 +29,15 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 12px;
+  margin-top: 18px;
+  padding-right: -25px;
 }
 
-.other_images > img{
+.other_images > .image > img {
   background-color: #e4e4e4;
   border-radius: 8px;
+  margin-right: 25px;
+  cursor: pointer;
 }
 
 /* Descrições do Produto */
