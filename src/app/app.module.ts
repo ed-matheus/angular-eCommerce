@@ -9,6 +9,7 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { HomeComponent } from './pages/home/home.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AccountComponent } from './pages/account/account.component';
 
 const routes: Routes = [
   { path: 'product/:id', component: ProductDetailsComponent}
@@ -22,6 +23,7 @@ const routes: Routes = [
     ProductCardComponent,
     HomeComponent,
     ProductDetailsComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,

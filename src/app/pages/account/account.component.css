@@ -1,0 +1,70 @@
+.main__container {
+  width: 900px;
+  height: 600px;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.container__register, .container__login{
+  /* border: 1px solid green; */
+  width: 400px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Formulários de Registro e Login*/
+.registering_forms, .login_forms {
+  border: 2px solid #d1d1d1;
+  border-radius: 12px;
+  width: 400px;
+  height: 440px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registering_forms > label, .login_forms > label {
+  font-weight: 500;
+}
+
+.registering_forms > input, .login_forms > input {
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d1d1d1;
+}
+
+.registering_forms > input:focus, .login_forms > input:focus {
+  background-color: #e7e7e7;
+}
+
+/* Botões Register e Sign in */
+.registering_forms > .btn {
+  background-color: #06358B;
+  font-weight: 500;
+  color: white;
+  width: 160px;
+}
+
+.registering_forms > .btn:active, .login_forms > .btn:active {
+  margin-top: 2px;
+}
+
+.login_forms > .btn {
+  border: 2px solid #06358B;
+  font-weight: 500;
+  color: #06358B;
+  width: 160px;
+}
+
+.login_forms > .btn:hover {
+  background-color: #06358B;
+  color: white;
+}
